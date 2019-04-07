@@ -17,12 +17,9 @@ class indexPage {
 	 */
 	public function __construct()
 	{
-		// Use this if project is in subdirectory e.g. 'http://localhost/simple-php-view'
-	   $localhostPath = '../views';
-	   $this->view = new view_library($localhostPath);
+		// Initialise views library
+	   $this->view = new view_library();
 
-		// Use this if the project has it's own domain e.g. 'http://localhost' and not in subdirectory
-		// $this->view = new view();
 	}
 
 	/**
